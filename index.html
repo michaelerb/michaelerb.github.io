@@ -1,44 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>My website</title>
+        <title>HTML and JavaScript pages</title>
         <meta charset="UTF-8">
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body>
-        <h1>Welcome to my website</h1>
-        <p>This website has html and JavaScript. It uses a JavaScript package called chart.js to make an interactive chart.</p>
-        <div><canvas id="chart_canvas" width="600" height="400"></canvas></div>
+        <p>This website provides links to sample html and JavaScript pages. If you've ended up here accidentally, you may want to return to the main <a href="https://www.appstate.edu/">App State website</a>.</p>
+        <h3>Example pages:</h3>
+        <p>Example 1: <a href="./example1_html.html">HTML page</a></p>
+        <p>Example 2: <a href="./example2_javascript.html">Javascript page</a></p>
+        <p>Example 3: <a href="./example3_chartjs.html">Page with Chart.js chart</a></p>
     </body>
-
-    <script>
-        
-        // Create some sample data
-        var time     = [1,2,3,4,5,6,7,8];
-        var data_ts1 = [1,2,4,0,8,6,7,5];
-        var data_ts2 = [3,6,8,3,9,0,3,4];
-
-        // Make the chart
-        const ctx_chart = document.getElementById("chart_canvas");
-        chart = new Chart(ctx_chart, {
-            type: 'line',
-            data: {
-                labels: time,
-                datasets: [{
-                    label: "Data 1",
-                    data: data_ts1
-                },{
-                    label: "Data 2",
-                    data: data_ts2
-                }]
-            },
-            options: {
-                responsive: false,
-                interaction: {
-                    intersect: false,
-                    mode: 'index'
-                }
-            }
-        })
-    </script>
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My website</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!-- A friendly greeting -->
+        <h1>Welcome to my website</h1>
+        <p>This website has html and JavaScript. JavaScript is a coding language for more advanced interactions.</p>
+
+        <!-- An interactive tool -->
+        <p>What is your name?</p>
+        <input type="text" id="input_box" value="">
+        <button onclick="print_name()">Submit</button>
+        <p id="output_paragraph"></p>
+    </body>
+
+    <script>
+        function print_name() {
+
+            // Get the name from the input box
+            var name = document.getElementById("input_box").value;
+
+            // Write a statement in the paragraph called "output_paragraph"
+            document.getElementById("output_paragraph").innerHTML = "Your name is "+name;
+        }
+    </script>
+</html>
